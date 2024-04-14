@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Challan Book</string>
+    <string name="didn_t_get_otp_resend">Didn\'t get Otp?<b>Resend</b></string>
+    <string name="see_old_bill_details">See old Bill Details</string>
+    <string name="bill_details">Bill Details !</string>
+    <string name="sell">Sell</string>
+    <string name="todo">TODO</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_Act">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/image_back_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/backicone"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:text="Setting's"
+            tools:ignore="HardcodedText,SpUsage" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/te"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Users"
+        android:textSize="15dp"
+        tools:ignore="HardcodedText,SpUsage"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/l1"/>
+
+    <LinearLayout
+        android:id="@+id/linear_edt_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="15dp"
+        android:background="@drawable/linear_corner"
+        app:layout_constraintTop_toBottomOf="@id/te">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="   Edit Shop Location"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="17dp"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage,UseCompatTextViewDrawableXml"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawableLeft="@drawable/location_on_24"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_logOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="15dp"
+        android:background="@drawable/linear_corner"
+        app:layout_constraintTop_toBottomOf="@id/linear_edt_shop">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="   LogOut"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:padding="5dp"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage,UseCompatTextViewDrawableXml"
+            android:textSize="17dp"
+            android:drawableLeft="@drawable/logout_24"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

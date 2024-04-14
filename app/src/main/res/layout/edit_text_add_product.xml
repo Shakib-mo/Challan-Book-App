@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F2F2">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c1"
+        android:layout_width="416dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/asmani">
+
+        <TextView
+            android:id="@+id/addProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="     Add Product"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableLeft="@drawable/add_shopping_cart_24"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage,UseCompatTextViewDrawableXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/c1">
+        <TextView
+            android:id="@+id/t2m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="14dp"
+            android:text="Product"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <EditText
+            android:id="@+id/ed_product"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:layout_marginStart="14dp"
+            tools:ignore="Autofill,LabelFor" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/l2">
+        <TextView
+            android:id="@+id/t3e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Price"
+            tools:ignore="HardcodedText,SpUsage"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/ed_price"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            tools:ignore="Autofill,HardcodedText,LabelFor,SpUsage"
+            android:hint=""
+            android:background="@color/white"
+            android:inputType="number"
+            android:layout_marginStart="14dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/l3">
+        <TextView
+            android:id="@+id/t4ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Quantity"
+            tools:ignore="HardcodedText,SpUsage"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:id="@+id/ed_quantity"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:hint=""
+            android:background="@color/white"
+            android:inputType="number"
+            android:layout_marginStart="14dp"
+            tools:ignore="Autofill,LabelFor" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/l5"
+        android:layout_width="416dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/l4">
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="?actionBarItemBackground"
+            android:drawableLeft="@drawable/save_alt_241"
+            android:text=" Save"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage"
+            android:textAllCaps="false"
+            android:textColor="@color/blu"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/bt_cancle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Cancle"
+            android:textColor="@color/red"
+            android:textSize="17dp"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/cancel_24"
+            android:textAllCaps="false"
+            android:background="?actionBarItemBackground"
+            app:layout_constraintStart_toEndOf="@id/bt_save"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

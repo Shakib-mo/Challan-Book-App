@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "991814404566",
+    "project_id": "challan-book-31196",
+    "storage_bucket": "challan-book-31196.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991814404566:android:287ff1b5603aa632d53c77",
+        "android_client_info": {
+          "package_name": "shakibk.app.challanbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991814404566-gcdrmhbavmbvdekvan530ng131eajld7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shakibk.app.challanbook",
+            "certificate_hash": "029c285ddc344cf96a5a8b8e7caae7e05aa45587"
+          }
+        },
+        {
+          "client_id": "991814404566-n2qol4bqo1h1836m5n0s4nlqb0mh466n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdy57sAnVPA4JoqPoXi3tUHxqm74wTJ9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991814404566-n2qol4bqo1h1836m5n0s4nlqb0mh466n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
